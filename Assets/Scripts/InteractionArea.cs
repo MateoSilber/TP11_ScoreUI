@@ -17,5 +17,6 @@ public class InteractionArea : MonoBehaviour
     }
     void OnCollisionEnter (Collision col){
         Debug.Log(col.gameObject.name);
+        Destroy(col.gameObject);
     }
 }
